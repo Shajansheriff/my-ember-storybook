@@ -15,12 +15,21 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "build-storybook": "build-storybook -s dist",
+    "storybook": "start-storybook -p 6006 -s dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/ember": "^5.3.17",
+    "@storybook/ember-cli-storybook": "^0.2.0",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.5.3",
     "ember-cli": "~3.15.1",
@@ -52,5 +61,6 @@
   },
   "ember": {
     "edition": "octane"
-  }
+  },
+  "dependencies": {}
 }
